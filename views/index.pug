@@ -1,0 +1,10 @@
+html
+	head
+		title anongifs
+	body
+		h1 anongifs
+		a(href="/random") random
+		ul
+			each gif in gifs
+				li
+					a(href=gif)= gif
