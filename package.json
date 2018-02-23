@@ -1,0 +1,23 @@
+{
+  "name": "anongifs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatanpedersen/anongifs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatanpedersen/anongifs/issues"
+  },
+  "homepage": "https://github.com/jonatanpedersen/anongifs#readme",
+  "dependencies": {
+    "express": "4.16.2",
+    "pug": "2.0.0-rc.4"
+  }
+}
