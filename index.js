@@ -8,19 +8,19 @@ app.use('/gifs', express.static('gifs'));
 
 app.get('/', (req, res) => {
 	const gifs = getGifs();
-	res.render('index', {gifs});
+	res.render('index', { gifs });
 });
 
 app.get('/random', (req, res) => {
 	const gifs = getGifs();
-	var gif = gifs[Math.floor(Math.random()*gifs.length)];
+	var gif = gifs[Math.floor(Math.random() * gifs.length)];
 
-	res.render('details', {gif});
+	res.render('details', { gif });
 });
 
 app.get('/:gif', (req, res) => {
-	const {gif} = req.params;
-	res.render('details', {gif});
+	const { gif } = req.params;
+	res.render('details', { gif });
 });
 
 const port = process.env.PORT || 1030;
@@ -30,5 +30,5 @@ app.listen(port, () => {
 });
 
 function getGifs () {
-	return glob.sync('*.gif', {cwd: './gifs/'});
+	return glob.sync('*.gif', { cwd: './gifs/' });
 }
